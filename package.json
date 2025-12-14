@@ -64,6 +64,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-flow": "^7.27.1",
     "@commitlint/config-conventional": "^20.2.0",
     "@evilmartians/lefthook": "^2.0.11",
     "@react-native/eslint-config": "^0.81.5",
@@ -72,16 +74,18 @@
     "@types/react": "^19.1.0",
     "commitlint": "^20.2.0",
     "del-cli": "^7.0.0",
-    "eslint": "^9.39.2",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-ft-flow": "^3.0.11",
+    "eslint-plugin-prettier": "^5.2.1",
+    "hermes-eslint": "^0.33.0",
     "jest": "^30.2.0",
     "prettier": "^3.7.4",
     "react": "19.1.0",
     "react-native": "0.81.5",
     "react-native-builder-bob": "^0.39.1",
     "release-it": "^19.1.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.5.4"
   },
   "resolutions": {
     "@types/react": "^19.1.0"
@@ -99,6 +103,9 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|react-native-svg)"
     ]
   },
   "commitlint": {
@@ -127,6 +134,9 @@
     "root": true,
     "extends": [
       "@react-native",
+      "prettier"
+    ],
+    "plugins": [
       "prettier"
     ],
     "rules": {
