@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react';
 import Svg from 'react-native-svg';
 import CountryPath from './components/CountryPath';
 
+const svgContainerStyle = {
+  justifyContent: 'center',
+  alignItems: 'center',
+} as const;
+
 type WorldMapProps = {
   color?: string;
   isSelectable?: boolean;
@@ -233,10 +238,7 @@ export function WorldMap({
       height={'100%'}
       viewBox="0 0 1000 500"
       fill={'none'}
-      style={{
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      style={svgContainerStyle}
       stroke={'#fff'}
       strokeWidth={1}
       {...props}
