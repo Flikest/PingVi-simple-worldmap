@@ -3616,7 +3616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/babel-preset@npm:0.81.5":
+"@react-native/babel-preset@npm:0.81.5, @react-native/babel-preset@npm:^0.81.5":
   version: 0.81.5
   resolution: "@react-native/babel-preset@npm:0.81.5"
   dependencies:
@@ -12438,6 +12438,7 @@ __metadata:
     "@babel/preset-flow": ^7.27.1
     "@commitlint/config-conventional": ^20.2.0
     "@evilmartians/lefthook": ^2.0.11
+    "@react-native/babel-preset": ^0.81.5
     "@react-native/eslint-config": ^0.81.5
     "@release-it/conventional-changelog": ^10.0.3
     "@types/jest": ^30.0.0

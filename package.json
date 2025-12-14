@@ -68,6 +68,7 @@
     "@babel/preset-flow": "^7.27.1",
     "@commitlint/config-conventional": "^20.2.0",
     "@evilmartians/lefthook": "^2.0.11",
+    "@react-native/babel-preset": "^0.81.5",
     "@react-native/eslint-config": "^0.81.5",
     "@release-it/conventional-changelog": "^10.0.3",
     "@types/jest": "^30.0.0",
@@ -99,13 +100,30 @@
   ],
   "packageManager": "yarn@3.6.1",
   "jest": {
-    "preset": "react-native",
+    "testEnvironment": "node",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|react-native-svg)"
+      "node_modules/(?!(@?react-native|@react-native-community|@react-native/|react-native-svg)/)"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": [
+        "babel-jest",
+        {
+          "configFile": "./babel.config.js"
+        }
+      ]
+    },
+    "setupFiles": [],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
     ]
   },
   "commitlint": {
