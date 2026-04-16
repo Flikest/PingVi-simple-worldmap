@@ -12004,6 +12004,57 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pingvi-simple-worldmap-example@workspace:example":
+  version: 0.0.0-use.local
+  resolution: "pingvi-simple-worldmap-example@workspace:example"
+  dependencies:
+    "@babel/core": ^7.28.5
+    "@expo/metro-runtime": ~6.1.2
+    expo: ~54.0.29
+    expo-status-bar: ~3.0.9
+    pingvi-simple-worldmap: "*"
+    react: 19.1.0
+    react-dom: 19.1.0
+    react-native: 0.81.5
+    react-native-builder-bob: ^0.39.1
+    react-native-web: ~0.21.2
+  languageName: unknown
+  linkType: soft
+
+"pingvi-simple-worldmap@*, pingvi-simple-worldmap@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "pingvi-simple-worldmap@workspace:."
+  dependencies:
+    "@babel/core": ^7.28.5
+    "@babel/preset-flow": ^7.27.1
+    "@commitlint/config-conventional": ^20.2.0
+    "@evilmartians/lefthook": ^2.0.11
+    "@react-native/babel-preset": ^0.81.5
+    "@react-native/eslint-config": ^0.81.5
+    "@release-it/conventional-changelog": ^10.0.3
+    "@types/jest": ^30.0.0
+    "@types/react": ^19.1.0
+    commitlint: ^20.2.0
+    del-cli: ^7.0.0
+    eslint: ^8.57.1
+    eslint-config-prettier: ^9.1.0
+    eslint-plugin-ft-flow: ^3.0.11
+    eslint-plugin-prettier: ^5.2.1
+    hermes-eslint: ^0.33.0
+    jest: ^30.2.0
+    prettier: ^3.7.4
+    react: 19.1.0
+    react-native: 0.81.5
+    react-native-builder-bob: ^0.39.1
+    react-native-svg: latest
+    release-it: ^19.1.0
+    typescript: ^5.5.4
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
+
 "pirates@npm:^4.0.1, pirates@npm:^4.0.4":
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
@@ -12413,56 +12464,6 @@ __metadata:
   checksum: 8fb6d8ab7b953c7d7cec8c987cef24f1c5348a293a85cb49c7c53b54ef110c0ca746736ae730e297603c8c76020df912e93915fb17518c4f2f91143757177aba
   languageName: node
   linkType: hard
-
-"react-native-simple-worldmap-example@workspace:example":
-  version: 0.0.0-use.local
-  resolution: "react-native-simple-worldmap-example@workspace:example"
-  dependencies:
-    "@babel/core": ^7.28.5
-    "@expo/metro-runtime": ~6.1.2
-    expo: ~54.0.29
-    expo-status-bar: ~3.0.9
-    react: 19.1.0
-    react-dom: 19.1.0
-    react-native: 0.81.5
-    react-native-builder-bob: ^0.39.1
-    react-native-web: ~0.21.2
-  languageName: unknown
-  linkType: soft
-
-"react-native-simple-worldmap@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "react-native-simple-worldmap@workspace:."
-  dependencies:
-    "@babel/core": ^7.28.5
-    "@babel/preset-flow": ^7.27.1
-    "@commitlint/config-conventional": ^20.2.0
-    "@evilmartians/lefthook": ^2.0.11
-    "@react-native/babel-preset": ^0.81.5
-    "@react-native/eslint-config": ^0.81.5
-    "@release-it/conventional-changelog": ^10.0.3
-    "@types/jest": ^30.0.0
-    "@types/react": ^19.1.0
-    commitlint: ^20.2.0
-    del-cli: ^7.0.0
-    eslint: ^8.57.1
-    eslint-config-prettier: ^9.1.0
-    eslint-plugin-ft-flow: ^3.0.11
-    eslint-plugin-prettier: ^5.2.1
-    hermes-eslint: ^0.33.0
-    jest: ^30.2.0
-    prettier: ^3.7.4
-    react: 19.1.0
-    react-native: 0.81.5
-    react-native-builder-bob: ^0.39.1
-    react-native-svg: latest
-    release-it: ^19.1.0
-    typescript: ^5.5.4
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  languageName: unknown
-  linkType: soft
 
 "react-native-svg@npm:latest":
   version: 15.11.1

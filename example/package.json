@@ -1,5 +1,5 @@
 {
-  "name": "react-native-simple-worldmap-example",
+  "name": "pingvi-simple-worldmap-example",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
     "@expo/metro-runtime": "~6.1.2",
     "expo": "~54.0.29",
     "expo-status-bar": "~3.0.9",
+    "pingvi-simple-worldmap": "*",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native": "0.81.5",
